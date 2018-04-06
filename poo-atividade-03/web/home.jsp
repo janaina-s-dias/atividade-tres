@@ -22,7 +22,7 @@
                  <div class='row'>
                          	<div class='col-sm-4 col-md-4'>
                                   <div class='thumbnail' style='background: #000\9'>
-                                     <img src='https://avatars0.githubusercontent.com/u/36648465?s=460&v=4' alt='...' class='img-circle' width='242' height='200'>
+                                      <img src='resources/edvaldo.jpeg' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Edvaldo Pietro</h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/edvaldoprieto' target='_blank'>@edvaldoprieto </p></a>
@@ -31,7 +31,7 @@
                         	 </div>
                      <div class='col-sm-4 col-md-4'>
                                   <div class='thumbnail' style='background: #000\9'>
-                                     <img src='https://avatars0.githubusercontent.com/u/36648465?s=460&v=4' alt='...' class='img-circle' width='242' height='200'>
+                                      <img src='resources/janaina.png' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Janaina Dias</h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/janainadias95' target='_blank'>@janainadias95</p></a>
@@ -40,7 +40,7 @@
                         	 </div>
                      <div class='col-sm-4 col-md-4'>
                                   <div class='thumbnail' style='background: #000\9'>
-                                     <img src='https://avatars0.githubusercontent.com/u/36648465?s=460&v=4' alt='...' class='img-circle' width='242' height='200'>
+                                      <img src='resources/nilton.jpeg' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Nilton Mitsuharu </h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/niltonSugawara' target='_blank'>@niltonSugawara </p></a>
