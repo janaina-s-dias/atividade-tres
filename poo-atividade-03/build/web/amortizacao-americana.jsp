@@ -1,12 +1,10 @@
 <%-- 
     Document   : amortizacao-americana
-    Created on : 05/04/2018, 01:18:51
-    Author     : JANAINASILVADIAS
+    Created on : 05/04/2018, 21:18:32
+    Author     : Edvaldo Ausuto P Prieto
 --%>
 
-<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,88 +14,98 @@
         <script src='js/scripts.js'></script>
         <link href='src/css/bootstrap.css' rel='stylesheet'>
 
-        <title>Amortização Americana</title>
+        <title> Amortização Americana</title>
         
     </head>
     <body>
          <%@include file="WEB-INF/jspf/menu.jspf" %>
     <center>
-        <h1>Amortização Americana</h1>
+        <h1>Cálculo Sistema de Amortização Americana</h1>
         <form>
             
             <b>Saldo Devedor</b>  <br/><input type="text" name="capital" required=""/><br/>
             <b>Tempo</b>  <br/><input type="number" name="parcelas"  /><br/>
             <b>Taxa de Juros</b>  <br/><input type="number" name="juros"  /><br/>
-           <br/> <button type="submit" class="btn btn-danger" >Simular</button>
+           <br/> <input type="submit" Value="Enviar"/><br/>
         </form>
         <% try { %>
         
-           <%int capital = Integer.parseInt(request.getParameter("capital")); %>  
+           <%double capital = Double.parseDouble(request.getParameter("capital")); %>  
            <%int parcelas = Integer.parseInt(request.getParameter("parcelas")); %>  
-           <%double juros = Integer.parseInt(request.getParameter("juros")); %>  
-            
-          
-           <%DecimalFormat formatador = new DecimalFormat("0.00");%>
-           
-           <%double valorJuros = (capital*juros)/100;%>
-           
-     
-          
-          
-            
+           <%double juros = Double.parseDouble(request.getParameter("juros")); %>  
 
-<table border="1" style="text-align: center">
+           <br/>
+           
+           <p>Um empréstimo de $<%=capital%> a ser pago em <%=parcelas%> meses a uma taxa de juros de <%=juros%>% ao mês, portanto é pago somente os juros e na ultima parcela, é pago o juro + o valor total do saldo devedor inicial. <br/>Logo, a tabela SAA fica:</p>
+           
+           
+            <table border="1" style="text-align: center">
             <tr>
-                <th>Nº Prestação</th>
-                <th>Amortização</th> 
+                <th>Período</th>
+                <th>Prestação</th> 
                 <th>Juros</th>
-                <th>Dívida</th> 
-                 
+                <th>Amortização</th> 
+                <th>Saldo Devedor</th>
             <tr>
                 <td> 0 </td>
-                <td> 0 </td>
-                <td> 0 </td>            
-                <td><%=formatador.format(capital)%> </td>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+                <td>$<%=capital%> </td>
             </tr>
             
- 
+            
+     
+            <% double totalJuros = 0; %>
+            
+            <% double juro = capital * (double) (juros/100);%>
+            <%int i =0;%>
             
             
-            <% double totalJuro = 0;%>
-            <% double totalAmortizacao = 0;%>
-              
-            <% for (int i=1; i <= parcelas; i ++) { %>
-                      
-            <tr>
-                <td><%=i%> </td>
-                <td>0</td>
-                <td><%=formatador.format(valorJuros)%> </td>
-                <td><%=formatador.format(capital)%> </td>
-                
-            </tr>  
+            <% for (i=1; i <= parcelas; i ++) { %>
+            
+            
+            
+             
+             <%totalJuros += juro;%> 
              
 
-             
-            <%totalAmortizacao = (totalAmortizacao + valorJuros);%>
-            <%totalJuro = (totalJuro + valorJuros);%>
           
-            
-                <%}%>
+                <%if(i != parcelas){ %>
+                   <tr>
+                    <td> <b><%=i%></b> </td>
+                    <td><b>$<%=juro%></b> </td>
+                    <td><b><%=juro%></b></td>
+                    <td><b>-</b> </td>
+                    <td><b>-</b></td>
+                   </tr> 
+                <%} else {%>
                 
-                <tr>
-                    <td> <b>Total</b> </td>
-                    <td><b><%=formatador.format(capital)%></b> </td>
-                    <td><b><%=formatador.format(totalJuro)%></b></td>
-                    <td><b>0</b> </td>
+                    <tr>
+                    <td> <b><%=i%></b> </td>
+                    <td><b>$<%=juro + capital%></b> </td>
+                    <td><b>$<%=juro%></b></td>
+                    <td><b>$<%=capital%></b> </td>
+                    <td><b>-</b></td>
+                    </tr>
                     
-                </tr>
-               
+                    <tr>
+                    <td> <b>Total</b> </td>
+                    <td><b>$<%=totalJuros + capital %></b> </td>
+                    <td><b>$<%=totalJuros%></b></td>
+                    <td><b>$<%=capital%></b> </td>
+                    <td><b>-</b></td>
+                    </tr> 
+                    
+                
+                <%}}%>
+                
             </table>
-           
-           
+             
+                
           
          <% }catch(Exception ex){%>
-             Entre com um número válido.
+            
         <%}%>
         
     </center>

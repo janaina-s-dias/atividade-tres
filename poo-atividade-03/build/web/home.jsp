@@ -14,23 +14,23 @@
          <div class='container-fluid'>
             <div class='row'>
             <div class='col-md-12'>
-              <center><h3>Equipe EJN</h3></center>
+              <center><h3>Perfil da Equipe</h3></center>
              
 
             <section>
                  
                  <div class='row'>
                          	<div class='col-sm-4 col-md-4'>
-                                  <div class='thumbnail' style='background: #000\9'>
+                                  <div class='thumbnail' style='background: #CCC'>
                                       <img src='resources/edvaldo.jpeg' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
-                                            <h3 style='color: #006666' align='center'>Edvaldo Pietro</h3>
+                                            <h3 style='color: #006666' align='center'>Edvaldo Prieto</h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/edvaldoprieto' target='_blank'>@edvaldoprieto </p></a>
                                             </div>
                                  </div>
                         	 </div>
                      <div class='col-sm-4 col-md-4'>
-                                  <div class='thumbnail' style='background: #000\9'>
+                                  <div class='thumbnail' style='background: #CCC'>
                                       <img src='resources/janaina.png' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Janaina Dias</h3>
@@ -39,10 +39,10 @@
                                  </div>
                         	 </div>
                      <div class='col-sm-4 col-md-4'>
-                                  <div class='thumbnail' style='background: #000\9'>
+                                  <div class='thumbnail' style='background: #CCC'>
                                       <img src='resources/nilton.jpeg' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
-                                            <h3 style='color: #006666' align='center'>Nilton Mitsuharu </h3>
+                                            <h3 style='color: #006666' align='center'>Nilton </h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/niltonSugawara' target='_blank'>@niltonSugawara </p></a>
                                             </div>
                                  </div>
@@ -51,48 +51,45 @@
                  
             </section>
               <hr/>
-              
                 <center>
                 <a href='amortizacao-constante.jsp' target='_blank'>
-                <h3>Sistema de Cálculo de Amortização Constante</h3></a><br/>
+                <h3>Sistema de Cálculo de Amortizaçao Constante</h3></a><br/>
                 
-                <p> O <b>Sistema de Amortização Constante (SAC)</b> é uma forma de amortização de um empréstimo por prestações que incluem os juros, amortizando assim partes iguais do valor total do empréstimo.
+                <p> <b>Sistema de Amortização Constante (SAC)</b> é uma forma de amortização de um empréstimo por prestações que incluem os juros, amortizando assim partes iguais do valor total do empréstimo.
                     Neste sistema o saldo devedor é reembolsado em valores de amortização iguais. Desta forma, no sistema SAC o valor das prestações é decrescente, já que os juros diminuem a cada prestação. O valor da amortização é calculada dividindo-se o valor do principal pelo número de períodos de pagamento, ou seja, de parcelas.
                     O SAC é um dos tipos de sistema de amortização utilizados em financiamentos imobiliários. A principal característica do SAC é que ele amortiza um percentual fixo do valor principal (emissão), desde o início do financiamento. Esse percentual de amortização é sempre o mesmo, o que faz com que a parcela de amortização da dívida seja maior no início do financiamento, fazendo com que o saldo devedor caia mais rapidamente do que em outros mecanismos de amortização.
-                </p> 
-                <a href="amortizacao-constante.jsp"<button type="button" class="btn btn-info btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Simular</button></a><br/> 
+                </p><br/> 
                 <br/>
-                 <hr/>
-                 
-                <a href='tabela-price.jsp' target='_blank'>
-                <h3>Tabela Price</h3></a><br/>
-                
-                <p> <b>Tabela Price</b>, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. O método foi apresentado em 1771 por Richard Price em sua obra "Observações sobre Pagamentos Remissivos".
-
-O método foi idealizado pelo seu autor para pensões e aposentadorias. No entanto, foi a partir da 2ª revolução industrial que sua metodologia de cálculo foi aproveitada para cálculos de amortização de empréstimo.
+                <hr/>
+                </center>
+                <center>
                     
-                    
-                </p>
-                <a href="tabela-price.jsp"<button type="button" class="btn btn-info btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Simular</button></a><br/> <br/> 
-                <br/>
-                 <hr/>
                 <a href='amortizacao-americana.jsp' target='_blank'>
-                <h3>Sistema de Cálculo de Amortização Americano</h3></a><br/>
+                <h3>Sistema de Cálculo de Amortizaçao Americana</h3></a><br/>
                 
-                <p> O <b>Sistema de Amortização Americano</b> é uma forma de pagamento de empréstimos que se caracteriza pelo pagamento apenas dos juros da dívida,deixando o valor da dívida constante, que pode ser paga em apenas um único pagamento.
-
-Esse sistema de amortização tem a vantagem em relação ao sistema de pagamento único, pois nele não há incidência de juros sobre juros. Os juros sempre incidem sobre o valor original da dívida. Com isso o devedor pode quitar sua dívida quando quiser.
-
-Tem como desvantagem que o pagamento de juros pode, em tese, ser perpétuo mesmo quando já se pagou o equivalente à dívida em si. Para isso, basta que o número de prestações exceda 100% quando da soma dos juros simples.
-                    
-                </p>
-                <a href="amortizacao-americana.jsp"<button type="button" class="btn btn-info btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Simular</button></a><br/> <br/> 
-                <br/>
+                <p> <b>Sistema de Amortização Americana (SAA)</b> O Sistema de Amortização Americano é uma forma de pagamento de empréstimos que se caracteriza pelo pagamento apenas dos juros da dívida,deixando o valor da dívida constante, que pode ser paga em apenas um único pagamento. Esse sistema de amortização tem a vantagem em relação ao sistema de pagamento único, pois nele não há incidência de juros sobre juros. Os juros sempre incidem sobre o valor original da dívida. Com isso o devedor pode quitar sua dívida quando quiser. Tem como desvantagem que o pagamento de juros pode, em tese, ser perpétuo mesmo quando já se pagou o equivalente à dívida em si. Para isso, basta que o número de prestações exceda 100% quando da soma dos juros simples.</p><br/> 
                  
                 
 		<hr/>
             </center>
-             
+              <center>
+                  <a href='tabela-price.jsp' target='_blank'>
+                      <h3>Tabela PRICE</h3>
+                  </a><br/>
+                  <p><b>Tabela Price</b>, também chamado de sistema francês de
+                      amortização, é um método usado em amortização de
+                      empréstimo cuja principal característica é apresentar
+                      prestações (ou parcelas) iguais. O método foi apresentado
+                      em 1771 por Richard Price em sua obra "Observações sobre
+                      Pagamentos Remissivos" (em inglês: Observations on
+                      Reversionary Payments).O método foi idealizado pelo seu
+                      autor para pensões e aposentadorias. No entanto, foi a 
+                      partir da 2ª revolução industrial que sua metodologia de 
+                      cálculo foi aproveitada para cálculos de amortização de 
+                      empréstimo
+                      
+                  </p>
+              </center>
                   
     </body>
      <%@include file="WEB-INF/jspf/footer.jspf" %>
