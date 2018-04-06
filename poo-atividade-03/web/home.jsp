@@ -22,7 +22,7 @@
                  <div class='row'>
                          	<div class='col-sm-4 col-md-4'>
                                   <div class='thumbnail' style='background: #CCC'>
-                                     <img src='https://avatars0.githubusercontent.com/u/36648465?s=460&v=4' alt='...' class='img-circle' width='242' height='200'>
+                                      <img src='resources/edvaldo.jpeg' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Edvaldo Prieto</h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/edvaldoprieto' target='_blank'>@edvaldoprieto </p></a>
@@ -31,7 +31,7 @@
                         	 </div>
                      <div class='col-sm-4 col-md-4'>
                                   <div class='thumbnail' style='background: #CCC'>
-                                     <img src='https://avatars0.githubusercontent.com/u/36648465?s=460&v=4' alt='...' class='img-circle' width='242' height='200'>
+                                      <img src='resources/janaina.png' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Janaina Dias</h3>
                                                <p align='center'><b>Github: </b><a href='https://github.com/janainadias95' target='_blank'>@janainadias95</p></a>
@@ -40,10 +40,10 @@
                         	 </div>
                      <div class='col-sm-4 col-md-4'>
                                   <div class='thumbnail' style='background: #CCC'>
-                                     <img src='https://avatars0.githubusercontent.com/u/36648465?s=460&v=4' alt='...' class='img-circle' width='242' height='200'>
+                                      <img src='resources/nilton.jpeg' alt='...' class='img-circle' width='242' height='200'>
                                           <div class='caption'>
                                             <h3 style='color: #006666' align='center'>Nilton </h3>
-                                               <p align='center'><b>Github: </b><a href='https://github.com/' target='_blank'>@ </p></a>
+                                               <p align='center'><b>Github: </b><a href='https://github.com/niltonSugawara' target='_blank'>@niltonSugawara </p></a>
                                             </div>
                                  </div>
                         	 </div>
@@ -60,6 +60,10 @@
                     O SAC é um dos tipos de sistema de amortização utilizados em financiamentos imobiliários. A principal característica do SAC é que ele amortiza um percentual fixo do valor principal (emissão), desde o início do financiamento. Esse percentual de amortização é sempre o mesmo, o que faz com que a parcela de amortização da dívida seja maior no início do financiamento, fazendo com que o saldo devedor caia mais rapidamente do que em outros mecanismos de amortização.
                 </p><br/> 
                 <br/>
+                <hr/>
+                </center>
+                <center>
+                    
                 <a href='amortizacao-americana.jsp' target='_blank'>
                 <h3>Sistema de Cálculo de Amortizaçao Americana</h3></a><br/>
                 
@@ -68,6 +72,24 @@
                 
 		<hr/>
             </center>
+              <center>
+                  <a href='tabela-price.jsp' target='_blank'>
+                      <h3>Tabela PRICE</h3>
+                  </a><br/>
+                  <p><b>Tabela Price</b>, também chamado de sistema francês de
+                      amortização, é um método usado em amortização de
+                      empréstimo cuja principal característica é apresentar
+                      prestações (ou parcelas) iguais. O método foi apresentado
+                      em 1771 por Richard Price em sua obra "Observações sobre
+                      Pagamentos Remissivos" (em inglês: Observations on
+                      Reversionary Payments).O método foi idealizado pelo seu
+                      autor para pensões e aposentadorias. No entanto, foi a 
+                      partir da 2ª revolução industrial que sua metodologia de 
+                      cálculo foi aproveitada para cálculos de amortização de 
+                      empréstimo
+                      
+                  </p>
+              </center>
                   
     </body>
      <%@include file="WEB-INF/jspf/footer.jspf" %>

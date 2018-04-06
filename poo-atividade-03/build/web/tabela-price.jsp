@@ -18,12 +18,12 @@
         <script src='js/scripts.js'></script>
         <link href='src/css/bootstrap.css' rel='stylesheet'>
         
-        <title>Amortização Price</title>
+        <title>Tabela Price</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <center>
-        <h1>Amortização PRICE</h1>
+        <h1>Tabela PRICE</h1>
         
         <form>
             <b>Valor Empréstimo</b><br/><input type="text" name="valorEmp" required=""/><br/>
@@ -42,8 +42,8 @@
            <p>Um empréstimo de $<%=valorEmp%> a ser pago em <%=temp%> meses a uma taxa de juros de <%=txJuros%>% ao mês: 
            
            
-            <table border="1" style="text-align: center">
-            <tr>
+            <table border='2' style='text-align: center'>
+                <tr>
                 <th>Período</th>
                 <th>Saldo Devedor</th> 
                 <th>Valor da parcela</th>
@@ -51,7 +51,7 @@
                 <th>Amortização</th>
             <tr>
                 <td> 0 </td>
-                <td> R$<%=valorEmp%> </td>
+                <td> R$<%=dec.format(valorEmp)%> </td>
                 <td> - </td>
                 <td> - </td>
                 <td> - </td>
@@ -88,8 +88,9 @@
             <%}%>
             </table>        
         <% } catch(Exception ex) {%>
-                Entrar com um número válido.
+        
                 <%}%>
         </center>
     </body> 
+     <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
